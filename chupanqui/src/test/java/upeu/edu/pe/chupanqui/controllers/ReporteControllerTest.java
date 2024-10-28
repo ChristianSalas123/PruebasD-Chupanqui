@@ -36,7 +36,7 @@ public class ReporteControllerTest {
         reporte = new Reporte();
         reporte.setId(1L);
         reporte.setTitulo("Desarrollador backedn");
-        reporte.setDescripcion("Con 3 años de experiencia.");
+        reporte.setDescripcion("sin experiencia.");
         reporte.setEmpresa("Empresa XYZ");
         reporte.setSalario(5000.0);
     }
