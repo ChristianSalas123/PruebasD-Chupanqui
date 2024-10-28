@@ -35,7 +35,7 @@ public class ReporteControllerTest {
     public void setUp() {
         reporte = new Reporte();
         reporte.setId(1L);
-        reporte.setTitulo("Desarrollador Java");
+        reporte.setTitulo("Desarrollador python");
         reporte.setDescripcion("Con 3 años de experiencia.");
         reporte.setEmpresa("Empresa XYZ");
         reporte.setSalario(5000.0);
@@ -53,7 +53,7 @@ public class ReporteControllerTest {
         
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(1, response.getBody().size());
-        assertEquals("Desarrollador Java", response.getBody().get(0).getTitulo());
+        assertEquals("Desarrollador python", response.getBody().get(0).getTitulo());
     }
 
     @Test
@@ -64,7 +64,7 @@ public class ReporteControllerTest {
         
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
-        assertEquals("Desarrollador Java", response.getBody().getTitulo());
+        assertEquals("Desarrollador python", response.getBody().getTitulo());
     }
 
     @Test
